@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="desafios">
+      <div class="desafio" *ngFor="let desafio of desafios" title="{{ desafio.notes }}">
+          <h2>{{ desafio.title }}</h2>
+          <img src="{{ desafio.image }}"/>
+          <br/>
+          <br/>
+          <div class="form-group row">
+            <div class="col-sm-12 col-md-12">
+              <label for="{{desafio.id}}">{{desafio.description}}</label>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <input id="{{desafio.id}}" class="form-control" [(ngModel)]="desafio.input" />
+            </div>
+            <div class="col-sm-12 col-md-6"><button type="button" class="btn btn-default" (click)="desafio.duracaoDaExecucao()">Resolver</button></div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6" style="font-weight: bold; text-align: right">{{ desafio.result }}</div>
+            <div class="col-sm-12 col-md-6">{{ desafio.duration | number:'1.0-0' }} milisegundos</div>
+          </div>
+        </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+div .desafio { margin: 10px; padding: 10px; border-radius: 10px; }
+
+
+.desafio:nth-of-type(5n+1) { background-color: #B6E8D2; }
+.desafio:nth-of-type(5n+2) { background-color: dodgerblue; }
+

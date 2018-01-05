@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
+import {HelltriangleComponent} from './helltriangle/helltriangle.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HelltriangleComponent
   ],
   imports: [
     BrowserModule,

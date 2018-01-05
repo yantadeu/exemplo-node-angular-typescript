@@ -1,5 +1,5 @@
-import {Desafio} from '../../../src/app/desafio';
-import {Triangle} from '../../../src/app/triangle';
+import {Desafio} from '../desafio';
+import {Triangle} from '../triangle';
 
 export class DesafioHellTriangle extends Desafio {
 

@@ -9,6 +9,39 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+<div class="container">
+
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="https://ri.b2w.digital" target="_blank" title="B2W Digital">
+          <img src="/assets/images/logo.png" alt="B2W Digital"  class="adjust-img">
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+
+          <li class="active"><a [routerLink]="['/hell_triangle']">Hell Triangle</a></li>
+          <li><a [routerLink]="['/resize_image']">Resize Image</a></li>
+
+        </ul>
+
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+
   <app-root></app-root>
+
+
+</div>
+
+
 </body>
 </html>

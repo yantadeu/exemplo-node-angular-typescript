@@ -1,10 +1,17 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {HelltriangleComponent} from './helltriangle/helltriangle.component';
+import {helltriangleRoutes} from "./helltriangle/helltriangle.routes";
+import {resizeimageRoutes} from "./resizeimage/resizeimage.routes";
 
 // Route Configuration
 export const routes: Routes = [
-   { path: 'helltriangle', component: HelltriangleComponent }
+   {
+      path: '',
+      redirectTo: "/helltriangle",
+      pathMatch: 'full'
+   },
+   ...helltriangleRoutes,
+   ...resizeimageRoutes
 ];
 
 // Deprecated provide

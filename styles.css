@@ -1,0 +1,38 @@
+/* Jumbotron */
+.demo-layout-transparent {
+  background: linear-gradient(
+      rgba(54, 219, 191, 0.45),
+      rgba(5, 210, 175, 0.45)
+    ),
+    url('assets/images/logo.png') center / cover;
+  height: 400px;
+}
+
+/* Nav Bar */
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Header Text */
+.header-text{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 250px;
+  color: white;
+}
+
+/* Content Wrapper */
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mdl-layout__header {
+  background-color: #f2f2f2 !important;
+}
+
+.mdl-navigation__link {
+  color: #424242 !important;
+}

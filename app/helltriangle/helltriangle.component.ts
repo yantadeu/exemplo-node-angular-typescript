@@ -23,7 +23,6 @@ import {DesafioHellTriangle} from './desafioHellTriangle';
       Resultado: {{ desafio.result }}<br/>
       Duração: {{ desafio.duration | number:'1.00' }} milisegundos
     </div>
-   
   </div>
 </div>
 `

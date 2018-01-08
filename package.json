@@ -1,7 +1,7 @@
 {
-  "name": "scotch-ng-router",
+  "name": "b2w-desafios-yantadeu",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "Desafios B2W",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
@@ -58,6 +58,8 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "^3.3.0",
     "rimraf": "^2.5.4"
+
+
   },
   "repository": {}
 }

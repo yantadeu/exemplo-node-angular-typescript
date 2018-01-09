@@ -7,6 +7,7 @@ import {ObjectImages} from './objectImages';
   template: `
 
     <div class="mdl-grid">
+      <div *ngIf="imagens.length == 0">Carregando Imagens...</div>
       <div *ngFor="let image of imagens">
         <div class="mdl-cell mdl-cell--12-col">
           <div class="mdl-shadow--3dp">

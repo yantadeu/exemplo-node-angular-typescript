@@ -5,9 +5,8 @@ import {Component} from '@angular/core';
   template: `
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
   <header class="mdl-layout__header">
-  <div class="container">
+  
     <div class="mdl-layout__header-row">
       <span class="mdl-layout-title"><img src="../assets/images/logo.png" /></span>
       <div class="mdl-layout-spacer"></div>
@@ -16,7 +15,7 @@ import {Component} from '@angular/core';
         <a class="mdl-navigation__link" [routerLink]="['/resizeimage']">Resize Image</a>
       </nav>
     </div>
-    </div>
+   
   </header>
   <div class="mdl-layout__drawer show_drawer">
 				<nav class="mdl-navigation show">
@@ -24,7 +23,7 @@ import {Component} from '@angular/core';
         <a class="mdl-navigation__link" [routerLink]="['/resizeimage']">Resize Image</a>
 				</nav>
 		</div>
-  <main class="container">
+  <main >
     <div class="mdl-grid"><router-outlet></router-outlet></div>
   </main>
 </div>

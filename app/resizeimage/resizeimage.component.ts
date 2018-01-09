@@ -9,7 +9,7 @@ import {ObjectImages} from './objectImages';
     <div class="mdl-grid">
       <div *ngFor="let image of imagens">
         <div class="mdl-cell mdl-cell--12-col">
-          <div class="mdl-shadow--2dp">
+          <div class="mdl-shadow--3dp">
             <div class="mdl-card__supporting-text">
               <img src="{{ image.url }}" id="{{ image.id }}" style="width: 320px;height: 240px"/>
             </div>
@@ -18,9 +18,9 @@ import {ObjectImages} from './objectImages';
                 <div class="mdl-selectfield">
                   <label>Tamanho da Imagem</label>
                   <select class="browser-default" id="s-{{image.id}}" (change)="resizeImages($event.target.value, image.id)">
-                    <option value="s">Small</option>
-                    <option value="m">Medium</option>
-                    <option value="l">Large</option>
+                    <option value="s">Small (320x240)</option>
+                    <option value="m">Medium (384x288)</option>
+                    <option value="l">Large (640x480)</option>
                   </select>
                 </div>
 

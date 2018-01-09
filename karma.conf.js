@@ -44,17 +44,17 @@ module.exports = function(config) {
 
       {pattern: 'systemjs.config.js', included: false, watched: false},
       'karma-test-shim.js',
-
+      {pattern: appBase + '**/*.html', included: true, watched: true},
       // transpiled application & spec code paths loaded via module imports
-      {pattern: appBase + '**/*.js', included: false, watched: true},
+      {pattern: appBase + '**/*.spec.js', included: false, watched: false},
 
       // asset (HTML & CSS) paths loaded via Angular's component compiler
       // (these paths need to be rewritten, see proxies section)
-      {pattern: appBase + '**/*.html', included: false, watched: true},
-      {pattern: appBase + '**/*.css', included: false, watched: true},
+
+      {pattern: appBase + '**/*.css', included: false, watched: false},
 
       // paths for debugging with source maps in dev tools
-      {pattern: appBase + '**/*.ts', included: false, watched: false},
+      {pattern: appBase + '**/*.spec.ts', included: false, watched: false},
       {pattern: appBase + '**/*.js.map', included: false, watched: false}
     ],
 

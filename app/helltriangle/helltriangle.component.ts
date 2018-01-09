@@ -5,10 +5,11 @@ import {DesafioHellTriangle} from './desafioHellTriangle';
 
 @Component({
   template: `<div class="desafio" *ngFor="let desafio of desafios" title="{{ desafio.notes }}">
+  
   <div class="mdl-grid">
-   <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><img src="{{ desafio.image }}"/></div>
+   <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet"><img src="{{ desafio.image }}"/></div>
   </div>
-  <br/>
+  
   <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
       <label>{{desafio.description}}</label>
@@ -17,7 +18,9 @@ import {DesafioHellTriangle} from './desafioHellTriangle';
       <input id="{{desafio.id}}" class="mdl-textfield__input" [(ngModel)]="desafio.input"/>
     </div>
     <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-      <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="desafio.duracaoDaExecucao()">Resolver</button>
+      <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--primary" (click)="desafio.duracaoDaExecucao()">Resolver</button>
+     <a href="app/helltriangle/spec/hellTriangleRunner.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" target="_blank">Teste Automatizado com Karma e Jasmine</a>
+ 
     </div>
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet">
       Resultado: {{ desafio.result }}<br/>

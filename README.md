@@ -8,7 +8,7 @@ Rode `npm install` na raiz do projeto
 
 ## Servidor de Desenvolvimento
 
-Rode `npm serve` para um servidor dev. Navegue para `http: // localhost: 4200 /`. O aplicativo irá recarregar automaticamente se você alterar qualquer um dos arquivos de origem.
+Rode `npm start` para um servidor dev. Navegue para `http: // localhost: 4200 /`. O aplicativo irá recarregar automaticamente se você alterar qualquer um dos arquivos de origem.
 
 ## Build
 
@@ -16,8 +16,4 @@ Rode `npm run build` para construir o projeto. Os artefatos de construção ser�
 
 ## Testes de unidade 
 
-Rode `npm test` para executar os testes da unidade via [Karma] (https://karma-runner.github.io).
-
-## Executando testes de ponta a ponta
-
-Rode `npm e2e` para executar os testes de ponta a ponta através de [Protractor] (http://www.protractortest.org/).
+Existem botões de testes em cada um dos desafios

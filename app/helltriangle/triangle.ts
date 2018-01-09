@@ -18,7 +18,7 @@ export class Triangle {
   }
 
   resolverUltimaLinha(triangle) {
-    var lastLine = triangle.pop(),
+    let lastLine = triangle.pop(),
       aboveLine = triangle.pop();
     for(var i = 0; i < aboveLine.length; i++)
       aboveLine[i] = Math.max(

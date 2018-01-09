@@ -7,6 +7,9 @@ import {ObjectImages} from './objectImages';
   template: `
 
     <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+      <a href="app/resizeimage/spec/resizeImageRunner.html" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" target="_blank">Teste Automatizado com Karma e Jasmine</a>
+     </div>
       <div *ngIf="imagens.length == 0">Carregando Imagens...</div>
       <div *ngFor="let image of imagens">
         <div class="mdl-cell mdl-cell--12-col">

@@ -1,7 +1,7 @@
 {
   "name": "b2w-desafios-yantadeu",
   "version": "1.0.0",
-  "description": "Desafios B2W",
+  "description": "Desafios da B2W",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
